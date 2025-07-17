@@ -1,4 +1,4 @@
-📄 PdfQuerySystem
+#📄 PdfQuerySystem
 
 A lightweight, FastAPI-powered AI system that lets users ask questions about PDFs and receive accurate, context-aware answers. <br>
 Powered by OpenAI embeddings, ChromaDB for vector search, and LangChain for Retrieval-Augmented Generation (RAG).<br>
@@ -17,34 +17,34 @@ Powered by OpenAI embeddings, ChromaDB for vector search, and LangChain for Retr
 
 💠 Tech Stack
 
-Python 3.10+
-FastAPI – API framework
-LangChain – RAG orchestration
-OpenAI API – Embeddings + Answer generation
-ChromaDB – In-memory vector store
-PyMuPDF / pdfplumber – PDF parsing
+Python 3.10+ |
+FastAPI – API framework | 
+LangChain – RAG orchestration |
+OpenAI API – Embeddings + Answer generation |
+ChromaDB – In-memory vector store |
+PyMuPDF / pdfplumber – PDF parsing | <br>
 
 📦 Installation
 
-- Clone the repository:
+- Clone the repository:<br>
 
-git clone https://github.com/NomaanBagwan04/PdfQuerySystem.git
+git clone https://github.com/NomaanBagwan04/PdfQuerySystem.git <br>
 cd PdfQuerySystem
 
-- Create a virtual environment and install dependencies:
+- Create a virtual environment and install dependencies: <br>
 
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+python -m venv venv <br>
+source venv/bin/activate  # On Windows: venv\Scripts\activate <br>
+pip install -r requirements.txt <br>
 
-- Set your OpenAI API key in a .env file:
-OPENAI_API_KEY=your_openai_key_here
+- Set your OpenAI API key in a .env file: <br>
+OPENAI_API_KEY=your_openai_key_here <br>
 
-▶️ Usage
+▶️ Usage 
 
-Run the FastAPI server:
-uvicorn main:app --reload
-Visit http://localhost:8000/docs for the Swagger UI to test the API.
+Run the FastAPI server: <br>
+uvicorn main:app --reload <br>
+Visit http://localhost:8000/docs for the Swagger UI to test the API. <br>
 
 📁 Project Structure
 
@@ -56,19 +56,19 @@ Visit http://localhost:8000/docs for the Swagger UI to test the API.
 └── README.md <br>
 
 <br>
-🧪 Sample Workflow
-+ Upload a PDF
-+ Automatically extract and embed content
-+ Ask questions like:
- + "What is the summary of the document?"
- + "Who is the author?"
- + "What are the key findings?"
+🧪 Sample Workflow <br>
+- Upload a PDF <br>
+- Automatically extract and embed content <br>
+- Ask questions like: <br>
+ - "What is the summary of the document?" <br>
+ - "Who is the author?" <br>
+ - "What are the key findings?" <br>
 
 🙌 Acknowledgements
 
-LangChain
-ChromaDB
-OpenAI
+LangChain <br>
+ChromaDB <br>
+OpenAI <br>
 
 ---
 
