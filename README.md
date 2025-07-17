@@ -1,56 +1,93 @@
-PDFQUERYSYSTEM
-Unlock Insights Instantly with Intelligent Document Search
+📄 PdfQuerySystem
 
-last-commit repo-top-language repo-language-count
-Built with the tools and technologies:
+A lightweight, FastAPI-powered AI system that lets users ask questions about PDFs and receive accurate, context-aware answers. Powered by OpenAI embeddings, ChromaDB for vector search, and LangChain for Retrieval-Augmented Generation (RAG).
 
+🚀 Features
 
-Table of Contents
-Overview
-Getting Started
-Prerequisites
-Installation
-Usage
-Testing
+✅ Upload PDF and extract content
 
-Overview
-PdfQuerySystem is a developer tool that enables scalable, intelligent question-answering over PDF documents by integrating Astra DB's serverless Cassandra with Vector Search capabilities and LangChain. It showcases how to efficiently query and extract relevant information from PDFs using vector-based search techniques, facilitating context-aware responses in a cloud-native environment.
+🤖 Ask natural language questions based on PDF content
 
-Why PdfQuerySystem?
+🧠 Uses vector search (ChromaDB) + OpenAI for accurate, grounded answers
 
-This project aims to streamline document querying workflows by combining cloud database services with advanced language models. The core features include:
+⚡ Built with FastAPI for speed and simplicity
 
-🧩 Vector Search Integration: Enables relevant and fast retrieval of information from large PDF datasets.
-🚀 Scalable Cloud Architecture: Leverages Astra DB's serverless Cassandra for effortless scalability.
-🧠 LangChain-powered QA: Implements intelligent question-answering over documents with context awareness.
-🔍 Efficient Data Extraction: Facilitates precise information retrieval from PDFs.
-🌐 Practical Demonstration: Provides a clear architecture example for building robust document query systems.
-Getting Started
-Prerequisites
-This project requires the following dependencies:
+🔌 Modular RAG pipeline using LangChain
 
-Programming Language: JupyterNotebook
+💠 Tech Stack
 
-Installation
-Build PdfQuerySystem from the source and install dependencies:
+Python 3.10+
+
+FastAPI – API framework
+
+LangChain – RAG orchestration
+
+OpenAI API – Embeddings + Answer generation
+
+ChromaDB – In-memory vector store
+
+PyMuPDF / pdfplumber – PDF parsing
+
+📦 Installation
 
 Clone the repository:
 
-❯ git clone https://github.com/NomaanBagwan04/PdfQuerySystem
-Navigate to the project directory:
+git clone https://github.com/NomaanBagwan04/PdfQuerySystem.git
+cd PdfQuerySystem
 
-❯ cd PdfQuerySystem
+Create a virtual environment and install dependencies:
 
-Install the dependencies:
-echo 'INSERT-INSTALL-COMMAND-HERE'
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
 
-Usage
-Run the project with:
-echo 'INSERT-RUN-COMMAND-HERE'
+Set your OpenAI API key in a .env file:
 
-Testing
-Pdfquerysystem uses the {test_framework} test framework. Run the test suite with:
+OPENAI_API_KEY=your_openai_key_here
 
-echo 'INSERT-TEST-COMMAND-HERE'
+▶️ Usage
 
-⬆ Return
+Run the FastAPI server:
+
+uvicorn main:app --reload
+
+Visit http://localhost:8000/docs for the Swagger UI to test the API.
+
+📁 Project Structure
+
+.
+├── main.py              # FastAPI entry point
+├── rag_pipeline.py      # PDF processing, embeddings, and QA logic
+├── utils.py             # Utility functions for text chunking, etc.
+├── requirements.txt
+└── README.md
+
+🧪 Sample Workflow
+
+Upload a PDF
+
+Automatically extract and embed content
+
+Ask questions like:
+
+"What is the summary of the document?"
+
+"Who is the author?"
+
+"What are the key findings?"
+
+📌 TODO
+
+
+
+🙌 Acknowledgements
+
+LangChain
+
+ChromaDB
+
+OpenAI
+
+📬 Contact
+
+Built with 💻 by Nomaan BagwanFeel free to raise issues, suggest improvements, or fork the project!
