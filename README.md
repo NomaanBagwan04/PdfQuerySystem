@@ -1,4 +1,4 @@
-#📄 PdfQuerySystem
+📄# PdfQuerySystem
 
 A lightweight, FastAPI-powered AI system that lets users ask questions about PDFs and receive accurate, context-aware answers. <br>
 Powered by OpenAI embeddings, ChromaDB for vector search, and LangChain for Retrieval-Augmented Generation (RAG).<br>
@@ -64,8 +64,8 @@ Visit http://localhost:8000/docs for the Swagger UI to test the API. <br>
  - "Who is the author?" <br>
  - "What are the key findings?" <br>
 
+<br>
 🙌 Acknowledgements
-
 LangChain <br>
 ChromaDB <br>
 OpenAI <br>
